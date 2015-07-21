@@ -3,10 +3,10 @@
  
 main:          /* This is main */
     mov r0, #0 /* Put a 0 inside the register r0 */
-.loop:
+loop:
     cmp r0, #16
-    beq .done
+    beq done
     add r0, #1
-    b .loop
-.done:
+    b loop
+done:
     bx lr      /* Return from main */
